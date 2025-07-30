@@ -19,4 +19,5 @@ public class Task3 {
 
 }
 
-//Total Number of girls getting Grade A are : 25
+/* output
+Total Number of girls getting Grade A are : 25*/
