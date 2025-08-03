@@ -4,13 +4,11 @@
 
 <web-app>
 
-    <display-name>Archetype Created Web Application</display-name>
+    <display-name>WIPROServlets</display-name>
 
-    
+    <!-- SERVLETS -->
     <servlet>
         <servlet-name>FirstServlet</servlet-name>
-        <display-name>FirstServlet</display-name>
-        <description></description>
         <servlet-class>myservletdemos.FirstServlet</servlet-class>
     </servlet>
 
@@ -24,7 +22,37 @@
         <servlet-class>myservletdemos.OrderServlet</servlet-class>
     </servlet>
 
-    
+    <servlet>
+        <servlet-name>MarksServlet</servlet-name>
+        <servlet-class>mywiproweb.MarksServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AddToCart</servlet-name>
+        <servlet-class>servletcookie.AddToCart</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ViewCart</servlet-name>
+        <servlet-class>servletcookie.ViewCart</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>VendorServlet</servlet-name>
+        <servlet-class>servletcookie.VendorServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>StudentServlet</servlet-name>
+        <servlet-class>mvcapplication.StudentServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>BookServlet</servlet-name>
+        <servlet-class>servlet.BookServlet</servlet-class>
+    </servlet>
+
+    <!-- MAPPINGS -->
     <servlet-mapping>
         <servlet-name>FirstServlet</servlet-name>
         <url-pattern>/Wipro_AddEmployee</url-pattern>
@@ -44,5 +72,62 @@
         <servlet-name>OrderServlet</servlet-name>
         <url-pattern>/OrderServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>MarksServlet</servlet-name>
+        <url-pattern>/processMarks</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AddToCart</servlet-name>
+        <url-pattern>/AddToCart</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ViewCart</servlet-name>
+        <url-pattern>/ViewCart</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>VendorServlet</servlet-name>
+        <url-pattern>/VendorServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>StudentServlet</servlet-name>
+        <url-pattern>/StudentServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>BookServlet</servlet-name>
+        <url-pattern>/BookServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>BookServlet</servlet-name>
+        <url-pattern>/list</url-pattern>
+    </servlet-mapping>
+
+    <!-- ✅ NEW MAPPING ADDED -->
+    <servlet-mapping>
+        <servlet-name>BookServlet</servlet-name>
+        <url-pattern>/books</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <servlet-name>RegisterServlet1</servlet-name>
+    <servlet-class>loginform.RegisterServlet1</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>RegisterServlet1</servlet-name>
+    <url-pattern>/register</url-pattern>
+</servlet-mapping>
+
+    <!-- WELCOME FILES -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>form.jsp</welcome-file>
+        <welcome-file>productForm.jsp</welcome-file>
+    </welcome-file-list>
 
 </web-app>
