@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="companyBean" class="springdemo.Company">
+        <constructor-arg value="201" />
+        <constructor-arg value="TechCorp Solutions" />
+    </bean>
+
+    <bean id="userBean" class="springdemo.User">
+        <constructor-arg value="501" />
+        <constructor-arg value="Jayasri" />
+        <constructor-arg ref="companyBean" />
+    </bean>
+
+</beans>
