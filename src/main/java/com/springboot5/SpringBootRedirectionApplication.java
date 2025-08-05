@@ -1,0 +1,11 @@
+package com.springboot5;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringBootRedirectionApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBootRedirectionApplication.class, args);
+    }
+}
