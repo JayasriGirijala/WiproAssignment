@@ -21,7 +21,7 @@ public class GroceryItem {
     @Min(value = 1, message = "Price must be at least 1")
     private double price;
 
-    // Constructors
+ 
     public GroceryItem() {}
 
     public GroceryItem(String name, int quantity, double price) {
@@ -30,7 +30,7 @@ public class GroceryItem {
         this.price = price;
     }
 
-    // Getters and setters
+
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 

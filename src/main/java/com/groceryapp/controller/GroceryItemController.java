@@ -46,7 +46,7 @@ public class GroceryItemController {
         return ResponseEntity.noContent().build();
     }
 
-    // Global exception handler for Not Found
+    
     @ExceptionHandler(NoSuchElementException.class)
     public ResponseEntity<String> handleNotFound(NoSuchElementException e) {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());

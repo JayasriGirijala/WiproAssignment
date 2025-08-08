@@ -12,7 +12,7 @@ import java.util.List;
 @RequestMapping("/bookXYZ")
 public class BookController {
 
-    // Return JSON by default (no need to specify produces)
+    
     @GetMapping
     public List<Book> getBooks() {
         List<Book> list = new ArrayList<>();

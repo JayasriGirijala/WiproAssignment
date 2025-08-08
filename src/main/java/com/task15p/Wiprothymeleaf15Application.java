@@ -10,9 +10,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EntityScan(basePackages = "com.task15p.entity")
 public class Wiprothymeleaf15Application {
 
-	public static void main(String[] args) {
-		SpringApplication.run(Wiprothymeleaf15Application.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(Wiprothymeleaf15Application.class, args);
+    }
 }
+
 
 //http://localhost:8080/clients
