@@ -1,4 +1,4 @@
-package springbootassi10.model;
+package com.springboot10.model;
 
 import jakarta.validation.constraints.*;
 import java.time.LocalDate;
