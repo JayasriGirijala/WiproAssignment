@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>BookWorld - Your Online Bookstore</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+  }
+  table, th, td {
+    border: 1px solid #999;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  h1, h2 {
+    margin-top: 20px;
+  }
+  form {
+    margin-top: 10px;
+  }
+  form input, form select, form textarea {
+    display: block;
+    margin-bottom: 10px;
+    padding: 6px;
+    width: 100%;
+    max-width: 250px;
+  }
+  iframe {
+    width: 320px;
+    height: 180px;
+  }
+  .two-column {
+    display: flex;
+    gap: 40px;
+    margin-top: 10px;
+  }
+  .two-column > div {
+    flex: 1;
+  }
+  ul, ol {
+    margin-top: 0;
+  }
+</style>
+</head>
+<body>
+
+<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=900&q=80" alt="Stack of Books" />
+
+<h1>Welcome to BookWorld</h1>
+<p>BookWorld is a premier online bookstore. There’s a penendium of a wise range of gentes sit need to derive generous seasment, and secure shopping ex-</p>
+
+<h2>Book Categories</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Number of Books</th>
+      <th>Top Author</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fiction</td>
+      <td>2,345</td>
+      <td>J.K. Rowling</td>
+    </tr>
+    <tr>
+      <td>Non-Fiction</td>
+      <td>1,789</td>
+      <td>Malcolm Gladwell</td>
+    </tr>
+    <tr>
+      <td>Children’s</td>
+      <td>1,234</td>
+      <td>Roald Dahl</td>
+    </tr>
+    <tr>
+      <td>Science</td>
+      <td>980</td>
+      <td>Stephen Hawking</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="two-column">
+  <div>
+    <h2>Best-Sellers</h2>
+    <ol>
+      <li>The Great Gatsby by F. Scott Fitzgerald</li>
+      <li>To Kill a Mockingbird by Harper Lee</li>
+      <li>1984 by George Orwell</li>
+      <li>The Catcher in the Rye by J. D. Salinger</li>
+      <li>The Hobbit by J.R.R. Tolkien</li>
+    </ol>
+  </div>
+
+  <div>
+    <h2>Upcoming Releases</h2>
+    <ul>
+      <li>The Midnight Library</li>
+      <li>Project Hall Mary</li>
+      <li>The Four Winds</li>
+      <li>Kiara and the Sun</li>
+      <li>The Lincoln Highway</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Book Preview</h2>
+<!--<iframe src="https://www.youtube.com/embed/2JfN-MoAGPM" frameborder="0" allowfullscreen></iframe>-->
+
+<form>
+  <input type="text" name="name" placeholder="Name" />
+  <input type="email" name="email" placeholder="Email" />
+  <label for="genre">Favorite Genre</label>
+  <select id="genre" name="genre">
+    <option>Fiction</option>
+    <option>Non-Fiction</option>
+    <option>Children’s</option>
+    <option>Science</option>
+  </select>
+  <textarea name="comments" rows="4" placeholder="Comments"></textarea>
+  <input type="submit" value="Submit" />
+</form>
+
+</body>
+</html>

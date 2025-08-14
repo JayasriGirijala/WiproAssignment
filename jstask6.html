@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tour Booking Form</title>
+    <link rel="stylesheet" href="jstask6.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Tour Booking Form</h2>
+
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" placeholder="Enter your name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email">
+
+    <label for="destination">Destination:</label>
+    <select id="destination">
+        <option value="">Select</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Isha">Isha</option>
+        <option value="Mysore">Mysore</option>
+    </select>
+
+    <label for="days">Number of Days:</label>
+    <input type="number" id="days" min="1">
+
+    <label for="travelers">Number of Travelers:</label>
+    <input type="number" id="travelers" min="1">
+
+    <button id="bookBtn">Book Now</button>
+
+    <div id="summary"></div>
+</div>
+
+<script src="jstask6.js"></script>
+</body>
+</html>

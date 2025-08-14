@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Trading Simulator</title>
+    <link rel="stylesheet" href="jstask11.css">
+</head>
+<body>
+    <h2>Stock Trading Simulator</h2>
+
+    <form id="tradeForm">
+        <label>Action:</label>
+        <select id="action">
+            <option value="buy">Buy</option>
+            <option value="sell">Sell</option>
+        </select><br>
+
+        <label>Company:</label>
+        <select id="company">
+            <option value="TCS">TCS</option>
+            <option value="Infosys">Infosys</option>
+            <option value="Wipro">Wipro</option>
+        </select><br>
+
+        <label>Shares:</label>
+        <input type="number" id="shares" min="1" required><br>
+
+        <label>Price per Share:</label>
+        <input type="number" id="price" min="1" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3>Transaction History</h3>
+    <div id="output"></div>
+    <h3 id="portfolioValue"></h3>
+
+    <script src="jstask11.js"></script>
+</body>
+</html>

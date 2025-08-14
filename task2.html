@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Online Conferences Registration Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>ONLINE CONFERENCES REGISTRATION FORM</h1>
+
+  <form>
+    <div class="section-title">Personal Information</div>
+
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" required /><br />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="user@example.com" required /><br />
+
+    <label>Gender</label>
+    <span class="radio-group">
+      <input type="radio" id="male" name="gender" value="Male" required />
+      <label for="male">Male</label>
+    <span class="radio-group">
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="female">Female</label>
+    </span>
+    <br />
+
+    <label for="country">Country</label>
+    <select id="country" name="country" required>
+      <option value="" disabled selected>--Select--</option>
+      <option value="USA">USA</option>
+      <option value="UK">UK</option>
+      <option value="India">India</option>
+      <option value="Canada">Canada</option>
+    </select>
+    <br />
+
+    <label for="photo">Profile Photo Upload</label>
+    <input type="file" id="photo" name="photo" accept="image/*" />
+    <br />
+
+    <div class="section-title">Account Preferences</div>
+
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" required /><br />
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required /><br />
+
+    <label for="confirmpassword">Confirm Password</label>
+    <input type="password" id="confirmpassword" name="confirmpassword" required /><br />
+
+    <label>Interests</label>
+    <span class="checkbox-group">
+      <input type="checkbox" id="webdev" name="interests" value="Web Development" />
+      <label for="webdev">Web Development</label>
+    </span>
+    <span class="checkbox-group">
+      <input type="checkbox" id="ai" name="interests" value="AI" />
+      <label for="ai">AI</label>
+    </span>
+    <span class="checkbox-group">
+      <input type="checkbox" id="cloud" name="interests" value="Cloud" />
+      <label for="cloud">Cloud</label>
+    </span>
+    <br />
+
+    <label>Preferred Contact Method</label>
+    <span class="radio-group">
+      <input type="radio" id="contactemail" name="contactmethod" value="Email" required />
+      <label for="contactemail">Email</label>
+    </span>
+    <span class="radio-group">
+      <input type="radio" id="contactphone" name="contactmethod" value="Phone" />
+      <label for="contactphone">Phone</label>
+    </span>
+    <br />
+
+    <label for="comments">Special Requirements / Comments</label>
+    <textarea id="comments" name="comments"></textarea>
+    <br />
+
+    <div class="section-title">Payment Details</div>
+
+    <label for="paymentmethod">Payment Method</label>
+    <select id="paymentmethod" name="paymentmethod" required>
+      <option value="" disabled selected>--Select--</option>
+      <option value="Credit Card">Credit Card</option>
+      <option value="PayPal">PayPal</option>
+      <option value="Bank Transfer">Bank Transfer</option>
+    </select>
+    <br />
+
+    <label for="cardnumber">Card Number</label>
+    <input type="text" id="cardnumber" name="cardnumber" maxlength="16" /><br />
+
+    <label>Expiry Date</label>
+    <select id="expirymonth" name="expirymonth">
+      <option value="" disabled selected>Month</option>
+      <option value="01">01</option>
+      <option value="02">02</option>
+      <option value="03">03</option>
+      <option value="04">04</option>
+      <option value="05">05</option>
+      <option value="06">06</option>
+      <option value="07">07</option>
+      <option value="08">08</option>
+      <option value="09">09</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+
+    <select id="expiryyear" name="expiryyear">
+      <option value="" disabled selected>Year</option>
+      <option value="2025">2025</option>
+      <option value="2026">2026</option>
+      <option value="2027">2027</option>
+    </select>
+    <br />
+
+    <label for="cvv">CVV</label>
+    <input type="text" id="cvv" name="cvv" maxlength="4" /><br />
+
+    <label>
+      <input type="checkbox" id="terms" name="terms" required /> I agree to Terms
+    </label>
+    <br />
+
+    <div class="btn-group">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
+</body>
+</html>

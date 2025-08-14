@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Feedback Survey</title>
+    <link rel="stylesheet" href="task4.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Website Feedback Survey</h1>
+        <p class="header-desc">We value your opinion. Please take a minute to share your thoughts.</p>
+    </header>
+
+    <nav class="nav">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Contact</a>
+    </nav>
+
+    <main class="main">
+        <form class="survey-form" action="#" method="post">
+            <section class="form-section">
+                <h2 class="section-title">Personal Information</h2>
+                <label class="form-label" for="fullname">Full Name *</label>
+                <input class="form-input" type="text" id="fullname" name="fullname" required>
+
+                <label class="form-label" for="email">Email Address *</label>
+                <input class="form-input" type="email" id="email" name="email" required>
+
+                <label class="form-label" for="age">Age</label>
+                <input class="form-input" type="number" id="age" name="age" min="10" max="100">
+            </section>
+
+            <section class="form-section">
+                <h2 class="section-title">Website Rating</h2>
+                <label class="form-label" for="design">Design (1-10):</label>
+                <input class="form-range" type="range" id="design" name="design" min="1" max="10">
+
+                <label class="form-label">Content Quality:</label>
+                <input class="form-radio" type="radio" name="quality" value="Excellent"> Excellent
+                <input class="form-radio" type="radio" name="quality" value="Good"> Good
+                <input class="form-radio" type="radio" name="quality" value="Average"> Average
+                <input class="form-radio" type="radio" name="quality" value="Poor"> Poor
+
+                <label class="form-label" for="visited">Most visited page:</label>
+                <select class="form-select" id="visited" name="visited">
+                    <option>Home</option>
+                    <option>Blog</option>
+                    <option>Products</option>
+                    <option>Contact</option>
+                </select>
+            </section>
+
+            <section class="form-section">
+                <h2 class="section-title">Suggestions</h2>
+                <textarea class="form-textarea" name="suggestions" placeholder="Write your suggestions here..."></textarea>
+                <br>
+                <input class="form-checkbox" type="checkbox" name="contact-agree"> I agree to be contacted regarding my feedback
+            </section>
+
+            <div class="form-buttons">
+                <input class="btn btn-submit" type="submit" value="Submit">
+                <input class="btn btn-reset" type="reset" value="Reset">
+            </div>
+        </form>
+
+        <aside class="aside">
+            <h3 class="aside-title">Why your feedback matters</h3>
+            <p class="aside-text">Your feedback helps us improve our website experience for everyone. Thank you!</p>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-text">© 2025 Website Survey</p>
+    </footer>
+</body>
+</html>

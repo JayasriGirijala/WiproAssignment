@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 20px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.orders-table th,
+.orders-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.orders-table thead {
+    background-color: #f9f9f9;
+}
+
+.orders-table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.orders-table tfoot {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+.grand-total-label {
+    text-align: right;
+}
+
+.grand-total-value {
+    text-align: left;
+}

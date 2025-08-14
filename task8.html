@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Furniture Store Catalog</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2E8B57;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 40px;
+        }
+
+        .product-card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px;
+            width: 260px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.03);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-card h3 {
+            margin: 15px 0 10px;
+            font-size: 1.2em;
+        }
+
+        .product-card p {
+            font-size: 14px;
+            color: #444;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .buy-button {
+            background-color: #2E8B57;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .buy-button:hover {
+            background-color: #246b45;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Furniture Store Catalog</h1>
+        <p>Find the best furniture for your home</p>
+    </header>
+
+    <section class="products">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80" alt="Sofa">
+            <h3 style="color: darkred;">Sofa</h3>
+            <p>Comfortable and stylish sofa with modern design</p>
+            <p class="price">$499</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+
+        <div class="product-card" style="background-color: #e0f7fa;">
+    <img src="https://images.pexels.com/photos/1866145/pexels-photo-1866145.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Dining Table">
+    <h3>Dining Table</h3>
+    <p>Elegant wooden dining table for 6 people</p>
+    <p class="price">$299</p>
+    <button class="buy-button">Buy Now</button>
+</div>
+
+
+        <div class="product-card">
+            <img src="https://images.pexels.com/photos/1866149/pexels-photo-1866149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Chair">
+            <h3>Chair</h3>
+            <p>Modern chair perfect for office or living room</p>
+            <p class="price">$149</p>
+            <button class="buy-button" style="background-color: black; color: white;">Buy Now</button>
+        </div>
+    </section>
+
+</body>
+</html>
